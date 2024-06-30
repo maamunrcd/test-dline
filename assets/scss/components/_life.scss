@@ -1,0 +1,31 @@
+.life-at-dotline {
+  padding-top: 185px;
+  .overlay {
+    top: 200px;
+    height: auto;
+  }
+  .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .section-title {
+    margin-top: 90px;
+    padding-right: 0;
+  }
+  .play-video {
+    margin-top: 230px;
+    margin-left: 124px;
+  }
+  .shadow-bg {
+    width: 30%;
+    height: 60%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(85, 169, 0, 0.4);
+    -webkit-filter: blur(200px);
+    filter: blur(200px);
+  }
+}

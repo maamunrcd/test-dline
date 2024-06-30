@@ -1,0 +1,40 @@
+.footer {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  .links-wrapper {
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 15px 0px 0 50px;
+  }
+  .social-links-wrapper {
+    padding: 70px 0;
+  }
+  .social-links-contact-wrapper {
+    padding: 0 0px 0 60px;
+  }
+  .footer-logo,
+  .social-links {
+    margin-bottom: 40px;
+    li {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .important-links {
+    ul {
+      li {
+        color: $footer-link-color;
+      }
+    }
+  }
+  .footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    .paragraph {
+      color: #545a71;
+    }
+  }
+  .copiright {
+    justify-content: end;
+  }
+}
