@@ -5,5 +5,8 @@ node_modules/
 .vscode/
 .idea/
 
+# Ignore DS files
+.DS_Store
+
 # Ignore Sass cache files
 .sass-cache/
