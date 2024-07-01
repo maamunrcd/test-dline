@@ -28,9 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         this.style.display = 'none'; // Hide the Load More button after clicking
     });
-    document.querySelectorAll('.links-wrapper .important-links').forEach(function (link) {
-        link.addEventListener('click', function () {
+
+    // **Footer links functionality**
+    document.querySelector('.links-wrapper').addEventListener('click', function (event) {
+        const link = event.target.closest('.important-links');
+        if (link) {
             link.classList.toggle('active');
-        });
+        }
     });
 });
