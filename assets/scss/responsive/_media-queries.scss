@@ -561,6 +561,18 @@
   }
 }
 
+@media (max-width: 375px) {
+  .life-at-dotline {
+    .play-video {
+      margin-top: 115px;
+      margin-left: 92px;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
+
 // Apply styles for container-md and container
 @media (min-width: 768px) {
   .container-md,

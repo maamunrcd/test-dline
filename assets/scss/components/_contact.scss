@@ -68,7 +68,7 @@
       }
       .common-checkmark {
         position: absolute;
-        top: 0;
+        top: 2px;
         left: 0;
         height: 16px;
         width: 16px;
@@ -82,9 +82,14 @@
         input[type="radio"] {
           opacity: 0;
           cursor: pointer;
+          width: 16px;
+          height: 16px;
+          top: 2px;
+          z-index: 2;
         }
         .checkmark {
           @extend .common-checkmark;
+          top: 3px;
         }
         input:checked ~ .checkmark {
           border-color: $danger;
@@ -114,6 +119,10 @@
         input[type="checkbox"] {
           opacity: 0;
           cursor: pointer;
+          width: 16px;
+          height: 16px;
+          top: 2px;
+          z-index: 2;
         }
         .checkmark {
           @extend .common-checkmark;
