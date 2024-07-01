@@ -94,10 +94,14 @@
     .service-item-header {
       border-bottom: 1px solid rgba(54, 59, 76, 0.8);
       line-height: 1.6;
-      padding: 40px 25px 35px 25px;
+      padding: 40px 25px 35px 35px;
     }
     .service-item-content {
-      padding: 55px 25px 35px 25px;
+      padding: 40px 25px 35px 35px;
+      .service-item-title {
+        margin-bottom: 30px;
+        margin-bottom: 20px;
+      }
     }
     .service-details {
       line-height: 1.6;

@@ -23,8 +23,25 @@
     }
   }
   .home-internet {
-    .inner {
-      margin-right: 0;
+    .title {
+      font-size: 2.4rem !important;
+      padding: 25px 0 0px 0;
+    }
+    .paragraph {
+      padding: 10px 14px 10px 30px;
+    }
+    .package-name {
+      padding: 10px 0 0 25px;
+    }
+    .btn-find-out {
+      margin: 15px 0 22px 25px;
+    }
+  }
+  .customer-reviews-wrapper {
+    .review-item {
+      &.card {
+        padding: 30px 25px 30px 30px !important;
+      }
     }
   }
   .footer {
@@ -87,21 +104,24 @@
   .home-internet {
     padding-top: 100px;
     .title {
-      padding-right: 0;
+      font-size: 2.75rem !important;
+      line-height: 1.3;
+      padding: 0 20% 10px 0px;
     }
     .inner {
-      margin-right: 0;
+      margin-right: 40px;
     }
     .details {
       margin-left: 0;
     }
     .paragraph {
-      padding: 10px 0 0 0;
+      padding: 15px 0 15px 0;
     }
     .package-name {
       padding-left: 0;
       padding-right: 0;
       line-height: 1.5;
+      padding-bottom: 20px;
     }
     .btn-find-out {
       margin-left: 0;
@@ -523,6 +543,9 @@
 }
 
 @media (max-width: 554px) {
+  .section-heading span {
+    padding: 0;
+  }
   .life-at-dotline {
     .overlay {
       top: 150px;
@@ -541,6 +564,9 @@
         line-height: 1.4;
       }
     }
+  }
+  .home-internet .title {
+    padding: 0 10% 10px 0px;
   }
 }
 
