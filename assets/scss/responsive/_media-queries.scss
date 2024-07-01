@@ -1,4 +1,17 @@
 @media (max-width: 1399px) {
+  .banner-wrapper {
+    .banner-img {
+      width: 56%;
+    }
+    .content {
+      .sub-title {
+        padding-right: 0;
+      }
+      .title {
+        font-size: 4.25rem;
+      }
+    }
+  }
   .life-at-dotline {
     .section-title {
       margin-top: 90px;
@@ -284,6 +297,10 @@
 }
 
 @media (max-width: 720px) {
+  body header.py-4 {
+    padding-top: 14px !important;
+    padding-bottom: 13px !important;
+  }
   .section-heading {
     font-size: 2.25rem;
   }
@@ -309,6 +326,9 @@
     }
     .banner-img {
       width: 100%;
+      .responsive-image {
+        width: 100%;
+      }
     }
   }
 

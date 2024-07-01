@@ -86,3 +86,110 @@
 .input-border {
   border: 1px solid $border-color;
 }
+
+// Text Styles
+.text-decoration-none,
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.text-black {
+  color: darken($primary-title-color, 100%);
+}
+
+.text-white {
+  color: lighten($primary-title-color, 100%);
+}
+
+.text-primary {
+  color: $primary-title-color;
+}
+
+// Background Styles
+.bg-black {
+  background: darken($primary-title-color, 100%);
+}
+
+.bg-white {
+  background: lighten($primary-title-color, 100%);
+}
+
+.primary-color {
+  background: $primary-title-color;
+}
+
+.title {
+  background: $text-gradient-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Hide original text */
+}
+
+// Components
+.card {
+  border: 1px solid rgba(54, 59, 76, 0.8);
+  background: rgba(22, 26, 41, 0.7);
+  border-radius: 23px;
+}
+
+.btn {
+  padding: 17px 35px;
+  border: 0;
+  background: transparent;
+  color: $primary-btn-color;
+}
+
+.btn-primary {
+  background: $btn-primary;
+}
+
+.link {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+}
+
+.section-heading {
+  line-height: 1.3;
+  padding: 15px 0;
+  margin-bottom: 25px;
+  span {
+    padding: 0 20px;
+  }
+}
+
+.section-heading-icon {
+  margin-bottom: 30px;
+  p {
+    background: transparent;
+    border: none;
+    padding: 13px 23px;
+    border-radius: 25px;
+    margin: 0;
+
+    img {
+      margin-right: 15px;
+    }
+    span {
+      margin-top: -3px;
+      &::after {
+        content: "";
+        width: 41px;
+        height: 41px;
+        border-radius: 100%;
+        position: absolute;
+        right: 15%;
+        top: -50%;
+        box-shadow: inset 0px 0px 11px rgba(57, 75, 108, 0.8);
+      }
+    }
+  }
+}

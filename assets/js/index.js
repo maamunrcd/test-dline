@@ -8,25 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // **Accordion functionality**
-    const accordionItems = document.querySelectorAll('.accordion-item');
+    const accordion = document.querySelector('.accordion');
 
-    accordionItems.forEach(item => {
-        item.addEventListener('click', () => {
+    accordion.addEventListener('click', (event) => {
+        const clickedItem = event.target.closest('.accordion-item');
+        if (clickedItem) {
             const activeItem = document.querySelector('.accordion-item.active');
-
-            if (activeItem && activeItem !== item) {
+            if (activeItem && activeItem !== clickedItem) {
                 activeItem.classList.remove('active');
             }
-
-            item.classList.toggle('active');
-        });
+            clickedItem.classList.toggle('active');
+        }
     });
 
     document.getElementById('loadmore').addEventListener('click', function () {
         let hiddenItems = document.querySelectorAll('.customer-reviews .review-item:nth-child(n+3)');
         hiddenItems.forEach(function (item) {
-            item.style.display = 'block';
-            item.style.width = '100%';
+            item.classList.add('show');
         });
         this.style.display = 'none'; // Hide the Load More button after clicking
     });

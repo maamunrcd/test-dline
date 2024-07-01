@@ -2,6 +2,7 @@
   padding: 75px 0 165px 0;
   .banner-img {
     right: 0;
+    width: 56%;
   }
   .shadow-bg {
     right: 0;
@@ -12,17 +13,16 @@
   }
 }
 .content {
-  padding-top: 100px;
-  padding-right: 64px;
+  padding-top: 60px;
+  padding-right: 50px;
   .sub-title {
-    line-height: 1.5;
     margin: 0;
     padding: 15px 0;
     padding-right: 60px;
   }
   .paragraph {
-    padding-bottom: 20px;
-    padding-right: 170px;
+    padding-bottom: 40px;
+    padding-right: 80px;
   }
 }
 .find-out {
@@ -33,5 +33,8 @@
     border-bottom-left-radius: 0;
     padding: 0 25px 0 35px;
     margin-right: 75px;
+  }
+  .responsive-image {
+    width: 45%;
   }
 }

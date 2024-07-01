@@ -14,6 +14,10 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   .review-item {
+    &.show {
+      display: block !important;
+      width: 100%;
+    }
     &:nth-child(3) {
       grid-area: 1 / 2 / 3 / 3;
     }
